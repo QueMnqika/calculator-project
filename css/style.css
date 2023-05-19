@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.screen{
+    background-color: #d9d9d9;
+    height: 2.5rem;
+    margin: 10px;
+    padding: 20px;
+}
+
+.calculator{
+    background-color: #737373;
+    margin: 250px 450px;
+}
+
+.cal-button{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: .5rem;
+}
+
+button{
+    height: 6rem;
+    width: 6rem;
+}
+
