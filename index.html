@@ -10,36 +10,38 @@
 <body>
     <main>
         <div class="calculator">
-            <input type="text" name="input" id="screen" class="screen">
+            <div id="screen">
+                <input type="text" name="screen" class="screen">
+            </div>
             <div class="cal-button">
                 <table>
                     <tr>
-                        <td colspan="2"><button class="AC-EQUAL">AC</button></td>
-                        <td><button class="delete" onclick="del()">DEL</button></td>
-                        <td><button onclick="screen('+')">+</button></td>
+                        <td colspan="2"><input type="button" value="AC" class="AC-EQUAL"></td>
+                        <td><input type="button" value="DEL"></td>
+                        <td><input type="button" value="+" class="operators"></td>
                     </tr>
                     <tr>
-                        <td><button onclick="screen(7)">7</button></td>
-                        <td><button onclick="screen(8)">8</button></td>
-                        <td><button onclick="screen(9)">9</button></td>
-                        <td><button onclick="screen('-')">-</button></td>
+                        <td><input type="button" value="7"></td>
+                        <td><input type="button" value="8"></td>
+                        <td><input type="button" value="9"></td>
+                        <td><input type="button" value="-" class="operators"></td>
                     </tr>
                     <tr>
-                        <td><button onclick="screen(4)">4</button></td>
-                        <td><button onclick="screen(5)">5</button></td>
-                        <td><button onclick="screen(6)">6</button></td>
-                        <td><button onclick="screen('x')">×</button></td>
+                        <td><input type="button" value="4"></td>
+                        <td><input type="button" value="5"></td>
+                        <td><input type="button" value="6"></td>
+                        <td><input type="button" value="×"></td>
                     </tr>
                     <tr>
-                        <td><button onclick="screen(1)">1</button></td>
-                        <td><button onclick="screen(2)">2</button></td>
-                        <td><button onclick="screen(3)">3</button></td>
-                        <td><button onclick="screen('÷')">÷</button></td>
+                        <td><input type="button" value="1"></td>
+                        <td><input type="button" value="2"></td>
+                        <td><input type="button" value="3"></td>
+                        <td><input type="button" value="÷" class="operators"></td>
                     </tr>
                     <tr>
-                        <td><button onclick="screen(0)">0</button></td>
-                        <td><button onclick="screen(',')">,</button></td>
-                        <td colspan="2"><button class="AC-EQUAL">=</button></td>
+                        <td><input type="button" value="0"></td>
+                        <td><input type="button" value=",">
+                        <td colspan="2"><input type="button" value="=" class="AC-EQUAL"></td>
                     </tr>
                 </table>
             </div>

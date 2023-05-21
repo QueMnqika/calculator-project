@@ -1,63 +1,10 @@
 //reference from J Mukanya
-function screen(value) {
-    document.querySelector('#screen').value += value
+let delBtn = document.querySelector('#del')
+let equalBtn = document.querySelector('#equal')
+let operators = document.querySelector('.operators')
+let output = document.querySelector('#screen')
+
+
+function del() {
+    output.textContent = '';
 }
-
-document.querySelector('#delete').addEventListener('click', 
-    (
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    ) => {
-        let results = document.querySelector('#screen').value;
-        results = results.slice(0, -1);
-    })

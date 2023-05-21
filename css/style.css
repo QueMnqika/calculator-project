@@ -9,10 +9,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+main{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 3rem;
+}
+
 .calculator{
     background-color: #737373;
-    margin:10px 435px;
-    padding: 15px 30px;
+    padding: 15px;
     border-radius: 25px;
     border: 1.5px solid #535353;
 }
@@ -27,7 +33,6 @@
     border-radius: 15px;
 }
 
-
 .AC-EQUAL{
    width: 195px;
 }
@@ -36,9 +41,13 @@
     width: 195px;
  }
 
-button{
-    height: 6rem;
-    width: 6rem;
+table{
+    padding-left: 1rem;
+}
+
+input{
+    height: 5rem;
+    width: 5rem;
     font-size: 1.5rem;
     border-radius: 25px;
     border: none;
@@ -46,8 +55,8 @@ button{
 }
 
 button:hover{
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     font-size: 1.5rem;
     border-radius: 25px;
     border: 1px solid #d9d9d9;
