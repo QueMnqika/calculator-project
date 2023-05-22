@@ -6,7 +6,7 @@ let operators = document.querySelector('.operators');
 let screenOutput = document.querySelector('#screen');
 let dot = document.querySelector('.dot')
 let arr = screenOutput
-arr = new Array()
+let sum = ''
 
 //display output
 let screen = (value) => {
@@ -15,28 +15,28 @@ let screen = (value) => {
 
 //delete
 let del = () => {
-    screenOutput.value = screenOutput.value.slice(0, -1)
+    screenOutput.value = screenOutput.value.slice(0, -1);
 }
 
 //allClear
-let allClear = () => {
-    screenOutput.value = '';
+let clearSum = () => {
+    screenOutput.value = sum;
 }
 
 //equal
-let equal = () => {
+let evaluateSum = () => {
     screenOutput.value = eval(screenOutput.value)
 }
 
 let repeat = () => {
-    if (screenOutput.lastElementChild == '.') {
-    }else if (screenOutput.lastElementChild == '+') {
+    if (screenOutput.lastElementChild = '.') {
+    }else if (screenOutput.lastElementChild = '+') {
         return
-    } else if (screenOutput.lastElementChild == '/') {
+    } else if (screenOutput.lastElementChild = '/') {
         return
-    } else if (screenOutput.lastElementChild == '-') {
+    } else if (screenOutput.lastElementChild = '-') {
         return
-    } else if (screenOutput.lastElementChild == '*') {
+    } else if (screenOutput.lastElementChild = '*') {
         return
     } else {
         

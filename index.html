@@ -16,11 +16,9 @@
             <div class="cal-button">
                 <table>
                     <tr>
-                        <td colspan="2"><button class="AC-EQUAL" onclick="allClear()">AC</button></td>
+                        <td colspan="2"><button class="AC-EQUAL" onclick="clearSum()">AC</button></td>
                         <td><button onclick="del()">DEL</button></td>
-                        <td><button class="operators" onclick="screen('+')">+</button></td>
-                    </tr>
-                    <tr>
+                        <button class="operators" onclick="screen('+')">+</button>
                         <td><button onclick="screen(7)">7</button></td>
                         <td><button onclick="screen(8)">8</button></td>
                         <td><button onclick="screen(9)">9</button></td>
@@ -41,7 +39,7 @@
                     <tr>
                         <td><button onclick="screen(0)">0</button></td>
                         <td><button onclick="screen('.')" class="operators">.</button></td>
-                        <td colspan="2"><button class="AC-EQUAL" onclick="equal()">=</button></td>
+                        <td colspan="2"><button class="AC-EQUAL" onclick="evaluateSum()">=</button></td>
                     </tr>
                 </table>
             </div>
