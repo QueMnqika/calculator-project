@@ -28,12 +28,18 @@ let equal = () => {
     screenOutput.value = eval(screenOutput.value)
 }
 
-//dot
-let dott = () => {
-    if (screenOutput.value.include('.')) {
-       return screenOutput.value += '.'
+let repeat = () => {
+    if (screenOutput.lastElementChild == '.') {
+    }else if (screenOutput.lastElementChild == '+') {
+        return
+    } else if (screenOutput.lastElementChild == '/') {
+        return
+    } else if (screenOutput.lastElementChild == '-') {
+        return
+    } else if (screenOutput.lastElementChild == '*') {
+        return
+    } else {
+        
     }
 }
-
-dot.addEventListener('click', dott)
-
+operators.addEventListener("click", repeat)
