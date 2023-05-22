@@ -4,27 +4,36 @@ let delBtn = document.querySelector('#del');
 let equalBtn = document.querySelector('#equal');
 let operators = document.querySelector('.operators');
 let screenOutput = document.querySelector('#screen');
+let dot = document.querySelector('.dot')
 let arr = screenOutput
-let a = 0;
-let b = 0;
-arr = [a, b]
+arr = new Array()
 
-//display input
-function screen(value) {
+//display output
+let screen = (value) => {
     screenOutput.value += value;
 }
 
 //delete
-function del() {
+let del = () => {
     screenOutput.value = screenOutput.value.slice(0, -1)
 }
 
 //allClear
-function allClear() {
+let allClear = () => {
     screenOutput.value = '';
 }
 
 //equal
+let equal = () => {
+    screenOutput.value = eval(screenOutput.value)
+}
 
+//dot
+let dott = () => {
+    if (screenOutput.value.include('.')) {
+       return screenOutput.value += '.'
+    }
+}
 
-//logic
+dot.addEventListener('click', dott)
+
