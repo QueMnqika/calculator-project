@@ -41,10 +41,8 @@ main{
     width: 190px;
  }
 
-.table{
+table{
     padding-left: 1rem;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(4);
 }
 
 button{
