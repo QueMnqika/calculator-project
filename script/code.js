@@ -7,7 +7,6 @@ let screenOutput = document.querySelector('#screen');
 let dot = document.querySelector('.dot')
 let arr = screenOutput
 let sum = ''
-arr = new Array()
 
 //display output
 let screen = (value) => {
@@ -30,14 +29,14 @@ let evaluateSum = () => {
 }
 
 let repeat = () => {
-    if (screenOutput.lastElementChild == '.') {
-    }else if (screenOutput.lastElementChild == '+') {
+    if (screenOutput.lastElementChild = '.') {
+    }else if (screenOutput.lastElementChild = '+') {
         return
-    } else if (screenOutput.lastElementChild == '/') {
+    } else if (screenOutput.lastElementChild = '/') {
         return
-    } else if (screenOutput.lastElementChild == '-') {
+    } else if (screenOutput.lastElementChild = '-') {
         return
-    } else if (screenOutput.lastElementChild == '*') {
+    } else if (screenOutput.lastElementChild = '*') {
         return
     } else {
         
