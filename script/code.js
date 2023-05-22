@@ -1,10 +1,19 @@
 //reference from J Mukanya
-let delBtn = document.querySelector('#del')
-let equalBtn = document.querySelector('#equal')
-let operators = document.querySelector('.operators')
-let output = document.querySelector('#screen')
+let delBtn = document.querySelector('#del');
+let equalBtn = document.querySelector('#equal');
+let operators = document.querySelector('.operators');
+let output = document.querySelector('#screen');
+
+
+//display
+function screen(value) {
+    output.value += value;
+}
+
 
 
 function del() {
-    output.textContent = '';
+    delBtn.addEventListener('click', () => {
+        output
+    })
 }

@@ -17,7 +17,7 @@ main{
 }
 
 .calculator{
-    background-color: #737373;
+    background-color: #373737;
     padding: 15px;
     border-radius: 25px;
     border: 1.5px solid #535353;
@@ -25,7 +25,7 @@ main{
 
 .screen{
     background-color: #d9d9d9;
-    width: 25rem;
+    width: 26rem;
     height: 5rem;
     margin: 10px;
     padding: 20px;
@@ -34,24 +34,25 @@ main{
 }
 
 .AC-EQUAL{
-   width: 195px;
+   width: 190px;
 }
 
 .AC-EQUAL:hover{
-    width: 195px;
+    width: 190px;
  }
 
 table{
     padding-left: 1rem;
 }
 
-input{
+button{
     height: 5rem;
     width: 5rem;
     font-size: 1.5rem;
     border-radius: 25px;
     border: none;
     margin: 3px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -59,8 +60,9 @@ button:hover{
     width: 5rem;
     font-size: 1.5rem;
     border-radius: 25px;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #5b5b5b;
     margin: 3px;
-    box-shadow: 0px 0px 5px #000;
+    box-shadow: 0px 0px 5px #ffffffa7;
+    cursor: pointer;
 }
 
