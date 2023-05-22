@@ -6,6 +6,7 @@ let operators = document.querySelector('.operators');
 let screenOutput = document.querySelector('#screen');
 let dot = document.querySelector('.dot')
 let arr = screenOutput
+let sum = ''
 arr = new Array()
 
 //display output
@@ -15,16 +16,16 @@ let screen = (value) => {
 
 //delete
 let del = () => {
-    screenOutput.value = screenOutput.value.slice(0, -1)
+    screenOutput.value = screenOutput.value.slice(0, -1);
 }
 
 //allClear
-let allClear = () => {
-    screenOutput.value = '';
+let clearSum = () => {
+    screenOutput.value = sum;
 }
 
 //equal
-let equal = () => {
+let evaluateSum = () => {
     screenOutput.value = eval(screenOutput.value)
 }
 
