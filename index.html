@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Calculator Project</title>
-</head>
-<body>
-    <main>
-        <div class="calculator">
-            <div>
-                <input type="text" name="screen" class="screen" id="screen">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Calculator Project</title>
+    </head>
+    <body>
+        <main>
+            <div class="calculator">
+                <div>
+                    <input type="text" name="screen" class="screen" id="screen">
+                </div>
+                <div class="cal-button">
+                    <table>
+                        <tr>
+                            <td colspan="2"><button class="AC-EQUAL">AC</button></td>
+                            <td><button>DEL</button></td>
+                            <br>
+                            <td><button class="operators" onclick="screen('+')">+</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>7</button></td>
+                            <td><button>8</button></td>
+                            <td><button>9</button></td>
+                            <td><button class="operators">-</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>4</button></td>
+                            <td><button>5</button></td>
+                            <td><button>6</button></td>
+                            <td><button class="operators">*</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>1</button></td>
+                            <td><button>2</button></td>
+                            <td><button>3</button></td>
+                            <td><button class="operators">÷</button></td>
+                        </tr>
+                        <tr>
+                            <td><button>0</button></td>
+                            <td><button class="operators">.</button></td>
+                            <td colspan="2"><button class="AC-EQUAL">=</button></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div class="cal-button">
-                <table>
-                    <tr>
-                        <td colspan="2"><button class="AC-EQUAL" onclick="clearSum()">AC</button></td>
-                        <td><button onclick="del()">DEL</button></td>
-                        <button class="operators" onclick="screen('+')">+</button>
-                        <td><button onclick="screen(7)">7</button></td>
-                        <td><button onclick="screen(8)">8</button></td>
-                        <td><button onclick="screen(9)">9</button></td>
-                        <td><button class="operators" onclick="screen('-')">-</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="screen(4)">4</button></td>
-                        <td><button onclick="screen(5)">5</button></td>
-                        <td><button onclick="screen(6)">6</button></td>
-                        <td><button class="operators" onclick="screen('*')">×</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="screen(1)">1</button></td>
-                        <td><button onclick="screen(2)">2</button></td>
-                        <td><button onclick="screen(3)">3</button></td>
-                        <td><button class="operators" onclick="screen('/')">÷</button></td>
-                    </tr>
-                    <tr>
-                        <td><button onclick="screen(0)">0</button></td>
-                        <td><button onclick="screen('.')" class="operators">.</button></td>
-                        <td colspan="2"><button class="AC-EQUAL" onclick="evaluateSum()">=</button></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </main>
-    <!--script-->
-    <script src="./script/code.js"></script>
-</body>
+        </main>
+        
+        <!--script-->
+    </body>
 </html>
