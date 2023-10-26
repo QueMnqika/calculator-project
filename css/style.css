@@ -12,48 +12,54 @@
 main{
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 3rem;
+    margin-top: 5%;
+    flex-wrap: wrap;
 }
 
-.calculator{
+.container{
     background-color: #373737;
     padding: 15px;
     border-radius: 25px;
     border: 1.5px solid #535353;
+    width: 26%;
 }
 
 .screen{
     background-color: #d9d9d9;
-    width: 26rem;
-    height: 5rem;
-    margin: 10px;
-    padding: 20px;
+    width: 95%;
+    margin: 3%;
+    padding: 5%;
     border: none;
     border-radius: 15px;
 }
 
+.cal-button{
+    margin-left: 1%;
+    width: 100%;
+}
+
 .AC-EQUAL{
-   width: 190px;
+   width: 95%;
 }
 
 .AC-EQUAL:hover{
-    width: 190px;
+    width: 95%;
  }
 
-table{
-    padding-left: 1rem;
+button{
+    width: 100%;
 }
 
 button{
     height: 5rem;
     width: 5rem;
-    font-size: 1.5rem;
+    margin: 3px;
+    font-size: 18px;
     border-radius: 25px;
     border: none;
-    margin: 3px;
     cursor: pointer;
 }
+
 
 button:hover{
     height: 5rem;
@@ -66,3 +72,47 @@ button:hover{
     cursor: pointer;
 }
 
+
+@media screen and (min-width: 300px) and (max-width: 1080px) {
+    main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+    /*
+    .calculator{
+        background-color: #373737;
+        padding: 15px;
+        border-radius: 25px;
+        border: 1.5px solid #535353;
+        width: 85%;
+    }
+    */
+    
+    /* .screen{
+        background-color: #d9d9d9;
+        width: 75%;
+        height: 5rem;
+        margin: 10px;
+        padding: 20px;
+        border: none;
+        border-radius: 15px;}
+
+    .container{
+        width: 60%;
+    }
+
+    .container input{
+        width: 100%;
+    }
+
+    td{
+        width: 1%;
+    }
+
+    .cal-button{
+        margin: 2%;
+    } */
+
+}
+  
