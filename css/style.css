@@ -7,45 +7,6 @@
     margin: 0;
 }
 
-/* section{
- margin-top: 15%;
- width: 25% !important;
-}
-
-#main-container{
-    background-color: #222222;
-    width: 30%;
-
-}
-
-button{
-    background-color: #a0a0a0;
-    color: #fff;
-    width: 100%;
-    margin: 5px;
-}
-
-#userInput{
-    width: 100%;
-    padding: 5px;
-    margin: 10px;
-}
-
-@media screen and (max-width: 300px) {
-    section{
-        margin-top: 0;
-    }
-}
-@media screen and (min-width: 321px) and (max-width: 720px) {
-    section{
-        margin-top: 50%;
-        padding: 25px;
-    }
-}
-@media screen and (min-width: 721px) and (max-width: 1200px) {
-    
-} */
-
 body{
     display: flex;
     justify-content: center;
@@ -61,11 +22,13 @@ body{
 }
 
 #input{
-    width: 100%;
     margin: 5px 0;
+    width: 100%;
 }
 
+
 input{
+    width: 100%;
     padding: 15px;
     border: none;
     background-color: #ffffffd2;
@@ -89,4 +52,31 @@ button:hover{
     border: none;
     color: #fff;
     box-shadow: 0 0 5px #1f1f1f;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    text-shadow: 0 0 5px gray;
+}
+
+@media screen and (max-width: 320px) {
+    #container{
+        width: 80%;
+    }
+    #Input{
+        margin: 0 5px;
+    }
+
+
+    #row{
+        padding: 5%;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
 }
