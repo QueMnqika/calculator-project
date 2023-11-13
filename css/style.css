@@ -54,6 +54,19 @@ button:hover{
     box-shadow: 0 0 5px #1f1f1f;
 }
 
+#top-left:hover{
+    color: #fff;
+    background-color: #FF5252;
+    box-shadow: 0 0 5px #1f1f1f;
+    padding: 16.5px;
+}
+
+#bottom-right:hover{
+    color: #fff;
+    background-color: #4CAF50;
+    box-shadow: 0 0 5px #1f1f1f;
+}
+
 a{
     text-decoration: none;
     color: #000;
